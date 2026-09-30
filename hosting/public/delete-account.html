@@ -1,0 +1,121 @@
+<title>Delete Scroll Sense Data</title>
+<meta name="description" content="How to delete your Scroll Sense account and data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --border: #e6e2ef;
+    --text: #1c1a24;
+    --text-dim: #58536a;
+    --accent: #7c3aed;
+    --accent-soft: #efe9fc;
+    --accent-ink: #4c1d95;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131018; --surface: #1b1723; --border: #2e2838;
+      --text: #ece9f4; --text-dim: #a79fc0; --accent: #b794f6;
+      --accent-soft: #2a2140; --accent-ink: #d8c8fb; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #131018; --surface: #1b1723; --border: #2e2838;
+    --text: #ece9f4; --text-dim: #a79fc0; --accent: #b794f6;
+    --accent-soft: #2a2140; --accent-ink: #d8c8fb; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.65; padding-inline: 20px; padding-block: 48px 80px;
+  }
+  .page { max-width: 640px; margin: 0 auto; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--accent-ink); background: var(--accent-soft);
+    border-radius: 999px; padding: 6px 14px; margin-bottom: 20px;
+  }
+  .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex: none; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-size: clamp(2rem, 5vw, 2.5rem);
+    line-height: 1.1; margin: 0 0 10px; text-wrap: balance; letter-spacing: -0.01em;
+  }
+  .meta { color: var(--text-dim); font-size: 14.5px; margin: 0 0 36px; }
+  h2 {
+    font-family: "Fraunces", Georgia, serif; font-size: 1.25rem; font-weight: 600;
+    margin: 36px 0 14px; color: var(--text);
+  }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  .steps { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .steps li {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 18px;
+  }
+  .step-num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); color: white; font-weight: 700; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .step-text { padding-top: 3px; }
+  .step-text strong { display: block; margin-bottom: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin-bottom: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); font-weight: 700; }
+  .contact {
+    background: var(--accent-soft); border-radius: 14px; padding: 22px 24px; margin-top: 40px;
+  }
+  .contact h2 { margin-top: 0; }
+  .contact .email { display: inline-block; font-weight: 700; color: var(--accent-ink); font-size: 15px; user-select: all; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 13px; }
+  a { color: var(--accent-ink); }
+</style>
+
+<div class="page">
+  <span class="eyebrow"><span class="dot"></span>Scroll Sense &middot; Account &amp; data deletion</span>
+  <h1>Delete your account and data</h1>
+  <p class="meta">For the Scroll Sense Android app (<code>com.dupati.scrollsense</code>), developed by Dupati.</p>
+
+  <h2>How to delete your account</h2>
+  <ol class="steps">
+    <li>
+      <span class="step-num">1</span>
+      <span class="step-text"><strong>Open Scroll Sense</strong> and scroll to the "Sync settings" card, then tap "Sign out" if you're signed in with Google.</span>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <span class="step-text"><strong>Email us a deletion request</strong> at <a href="mailto:scrollsensedata@gmail.com">scrollsensedata@gmail.com</a> from the Google account you used to sign in, with the subject "Delete my Scroll Sense data".</span>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <span class="step-text"><strong>We delete your cloud data</strong> — your synced settings and usage history stored in Firestore — within 30 days, and reply to confirm.</span>
+    </li>
+  </ol>
+  <p>Uninstalling the app immediately deletes everything stored on your device; it does not, by itself, delete anything already synced to the cloud, which is why the email step above is needed for that copy.</p>
+
+  <h2>What gets deleted, and what's kept</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <tr><th>Data</th><th>On request</th></tr>
+      <tr><td>Your account link (Google sign-in identifier)</td><td>Deleted</td></tr>
+      <tr><td>Synced settings (watched apps, reminders, bubble colour, mascot, messages, limits)</td><td>Deleted</td></tr>
+      <tr><td>Synced usage history (daily totals, per-app totals, session log)</td><td>Deleted</td></tr>
+      <tr><td>On-device usage data (never leaves your phone unless synced)</td><td>Deleted immediately on uninstall, or on request</td></tr>
+    </table>
+  </div>
+  <p>We don't retain a backup copy beyond what's needed to process the request, and we keep nothing longer than 30 days after a confirmed deletion request.</p>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>Questions about this process, or a deletion request:</p>
+    <span class="email">scrollsensedata@gmail.com</span>
+  </div>
+
+  <footer>See also the <a href="https://scroll-sense-cf009.web.app/privacy">Scroll Sense Privacy Policy</a> for full details on what we collect and why.</footer>
+</div>

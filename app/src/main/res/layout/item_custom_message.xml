@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/cardStroke"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/customMessageInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/custom_message_hint"
+                android:inputType="text"
+                android:maxLines="3"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="@color/labelText"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/deleteCustomMessageButton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/delete_custom_message"
+                android:src="@android:drawable/ic_menu_delete"
+                app:tint="@color/labelText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/useCustomMessage"
+            style="@style/MessageOptionRow"
+            android:layout_marginTop="12dp"
+            android:text="@string/use_this_message" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

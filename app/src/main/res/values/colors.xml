@@ -1,0 +1,39 @@
+<resources>
+    <color name="background">#F5F5F7</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="cardStroke">#E1E1E4</color>
+    <color name="timerText">#0288D1</color>
+    <color name="labelText">#5F5F63</color>
+    <color name="sectionHeader">#8A8A8E</color>
+    <color name="statusOn">#2E7D32</color>
+    <color name="statusOff">#EF6C00</color>
+    <color name="stockPositive">#2E7D32</color>
+    <color name="stockNegative">#C62828</color>
+    <color name="trackInactive">#26000000</color>
+    <color name="toggleTrackOff">#BDBDBD</color>
+
+    <!-- Fixed (not day/night-qualified) bubble colors: the overlay Service picks between
+         these explicitly based on the saved preference, since a Service doesn't follow
+         AppCompatDelegate's manual night-mode override the way an Activity does. -->
+    <color name="bubbleBackgroundDark">#E6121212</color>
+    <color name="bubbleBackgroundLight">#E6FFFFFF</color>
+    <color name="bubbleAccentDark">#4FC3F7</color>
+    <color name="bubbleAccentLight">#0288D1</color>
+    <color name="bubbleOutlineDark">#FFB74D</color>
+    <color name="bubbleOutlineLight">#F57C00</color>
+
+    <!-- Selectable bubble colour palette: a lighter shade for the dark bubble background
+         and a deeper shade for the light one, so contrast holds either way. -->
+    <color name="bubbleColorBlueDark">#4FC3F7</color>
+    <color name="bubbleColorBlueLight">#0288D1</color>
+    <color name="bubbleColorOrangeDark">#FFB74D</color>
+    <color name="bubbleColorOrangeLight">#F57C00</color>
+    <color name="bubbleColorGreenDark">#81C784</color>
+    <color name="bubbleColorGreenLight">#2E7D32</color>
+    <color name="bubbleColorPurpleDark">#CE93D8</color>
+    <color name="bubbleColorPurpleLight">#8E24AA</color>
+    <color name="bubbleColorPinkDark">#F48FB1</color>
+    <color name="bubbleColorPinkLight">#D81B60</color>
+    <color name="bubbleColorRedDark">#E57373</color>
+    <color name="bubbleColorRedLight">#C62828</color>
+</resources>

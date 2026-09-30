@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/limitBlockRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bubbleBackgroundDark"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="36dp">
+
+        <ImageView
+            android:id="@+id/limitBlockIcon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_bunny_face" />
+
+        <TextView
+            android:id="@+id/limitBlockTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/limit_block_title"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/limitBlockMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#CCFFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/limitBlockHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/limit_block_button_background"
+            android:paddingHorizontal="28dp"
+            android:paddingVertical="12dp"
+            android:text="@string/limit_block_home_button"
+            android:textAllCaps="false"
+            android:textColor="#121212"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/limitBlockUnlockLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="8dp"
+            android:text="@string/limit_block_unlock_link"
+            android:textColor="@color/bubbleAccentDark"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/limitBlockPinEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/limitBlockPinInput"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:hint="@string/pin_hint"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#88FFFFFF" />
+
+            <Button
+                android:id="@+id/limitBlockPinConfirmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/limit_block_button_background"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="10dp"
+                android:text="@string/unlock_button"
+                android:textAllCaps="false"
+                android:textColor="#121212"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/limitBlockPinError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/incorrect_pin"
+                android:textColor="#EF5350"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="44dp"
+    android:layout_height="44dp"
+    android:layout_marginHorizontal="6dp"
+    android:background="@drawable/color_swatch_ring"
+    android:clickable="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/colorSwatchFill"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/color_swatch_fill" />
+
+</FrameLayout>

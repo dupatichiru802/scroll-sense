@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Ears (outer) -->
+    <path
+        android:fillColor="#E8C39E"
+        android:pathData="M35,20 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+    <path
+        android:fillColor="#E8C39E"
+        android:pathData="M65,20 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+
+    <!-- Ears (inner) -->
+    <path
+        android:fillColor="#F8BBD0"
+        android:pathData="M35,21 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <path
+        android:fillColor="#F8BBD0"
+        android:pathData="M65,21 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+    <!-- Head (chubby) -->
+    <path
+        android:fillColor="#F4D9AE"
+        android:strokeColor="#D8B98A"
+        android:strokeWidth="1.5"
+        android:pathData="M50,58 m-34,0 a34,34 0 1,0 68,0 a34,34 0 1,0 -68,0" />
+
+    <!-- Puffy cheeks -->
+    <path
+        android:fillColor="#FBE8C8"
+        android:pathData="M24,66 m-11,0 a11,9 0 1,0 22,0 a11,9 0 1,0 -22,0" />
+    <path
+        android:fillColor="#FBE8C8"
+        android:pathData="M76,66 m-11,0 a11,9 0 1,0 22,0 a11,9 0 1,0 -22,0" />
+
+    <!-- Eyes -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M40,54 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M60,54 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+
+    <!-- Nose -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M50,61 m-3,0 a3,2.4 0 1,0 6,0 a3,2.4 0 1,0 -6,0" />
+
+    <!-- Blush -->
+    <path
+        android:fillColor="#FFCDD2"
+        android:fillAlpha="0.7"
+        android:pathData="M28,58 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <path
+        android:fillColor="#FFCDD2"
+        android:fillAlpha="0.7"
+        android:pathData="M72,58 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+</vector>
