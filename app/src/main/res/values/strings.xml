@@ -30,6 +30,10 @@
     <string name="overlay_status_auto_off">Auto — not running (tap Auto to start)</string>
     <string name="choose_apps">Choose Apps to Watch</string>
     <string name="section_apps_to_watch">APPS TO WATCH</string>
+    <string name="section_report_breakdown">BREAKDOWN</string>
+    <string name="section_report_trend">TREND</string>
+    <string name="section_report_list">List</string>
+    <string name="section_report_chart">Chart</string>
     <string name="apps_to_watch_description">Pick which apps get a daily time limit and show up in your time-spent breakdown.</string>
     <string name="choose_apps_title">Show overlay automatically for:</string>
     <string name="choose_apps_title_always">Set daily limits for:</string>

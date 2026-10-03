@@ -52,6 +52,35 @@ class DailyReportActivity : AppCompatActivity() {
         monthOption.setOnClickListener { selectTrendRange(TREND_MONTH) }
         selectTrendRange(TREND_WEEK)
 
+        setupCollapsibleSection(
+            header = findViewById(R.id.reportBreakdownSectionHeader),
+            content = findViewById(R.id.reportBreakdownSectionContent),
+            chevron = findViewById(R.id.reportBreakdownSectionChevron),
+            getExpanded = { TimerPrefs.getReportBreakdownSectionExpanded(this) },
+            setExpanded = { TimerPrefs.setReportBreakdownSectionExpanded(this, it) }
+        )
+        setupCollapsibleSection(
+            header = findViewById(R.id.reportTrendSectionHeader),
+            content = findViewById(R.id.reportTrendSectionContent),
+            chevron = findViewById(R.id.reportTrendSectionChevron),
+            getExpanded = { TimerPrefs.getReportTrendSectionExpanded(this) },
+            setExpanded = { TimerPrefs.setReportTrendSectionExpanded(this, it) }
+        )
+        setupCollapsibleSection(
+            header = findViewById(R.id.reportListSubHeader),
+            content = findViewById(R.id.reportListSubContent),
+            chevron = findViewById(R.id.reportListSubChevron),
+            getExpanded = { TimerPrefs.getReportListSectionExpanded(this) },
+            setExpanded = { TimerPrefs.setReportListSectionExpanded(this, it) }
+        )
+        setupCollapsibleSection(
+            header = findViewById(R.id.reportChartSubHeader),
+            content = findViewById(R.id.reportChartSubContent),
+            chevron = findViewById(R.id.reportChartSubChevron),
+            getExpanded = { TimerPrefs.getReportChartSectionExpanded(this) },
+            setExpanded = { TimerPrefs.setReportChartSectionExpanded(this, it) }
+        )
+
         refreshForSelectedDate()
     }
 
