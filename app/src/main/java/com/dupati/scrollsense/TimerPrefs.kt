@@ -188,6 +188,10 @@ object TimerPrefs {
     private const val KEY_NEWS_HEADLINES_SECTION_EXPANDED = "news_headlines_section_expanded"
     private const val KEY_STOCKS_SECTION_EXPANDED = "stocks_section_expanded"
     private const val KEY_SYNC_SECTION_EXPANDED = "sync_section_expanded"
+    private const val KEY_REPORT_BREAKDOWN_SECTION_EXPANDED = "report_breakdown_section_expanded"
+    private const val KEY_REPORT_TREND_SECTION_EXPANDED = "report_trend_section_expanded"
+    private const val KEY_REPORT_LIST_SECTION_EXPANDED = "report_list_section_expanded"
+    private const val KEY_REPORT_CHART_SECTION_EXPANDED = "report_chart_section_expanded"
     private const val KEY_WATCHED_STOCKS = "watched_stocks"
 
     /** Valid bubble colour ids; keep in sync with bubbleColorRes(). */
@@ -632,6 +636,54 @@ object TimerPrefs {
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
             .edit()
             .putBoolean(KEY_SYNC_SECTION_EXPANDED, expanded)
+            .apply()
+    }
+
+    fun getReportBreakdownSectionExpanded(context: Context): Boolean {
+        return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .getBoolean(KEY_REPORT_BREAKDOWN_SECTION_EXPANDED, true)
+    }
+
+    fun setReportBreakdownSectionExpanded(context: Context, expanded: Boolean) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .putBoolean(KEY_REPORT_BREAKDOWN_SECTION_EXPANDED, expanded)
+            .apply()
+    }
+
+    fun getReportTrendSectionExpanded(context: Context): Boolean {
+        return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .getBoolean(KEY_REPORT_TREND_SECTION_EXPANDED, true)
+    }
+
+    fun setReportTrendSectionExpanded(context: Context, expanded: Boolean) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .putBoolean(KEY_REPORT_TREND_SECTION_EXPANDED, expanded)
+            .apply()
+    }
+
+    fun getReportListSectionExpanded(context: Context): Boolean {
+        return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .getBoolean(KEY_REPORT_LIST_SECTION_EXPANDED, true)
+    }
+
+    fun setReportListSectionExpanded(context: Context, expanded: Boolean) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .putBoolean(KEY_REPORT_LIST_SECTION_EXPANDED, expanded)
+            .apply()
+    }
+
+    fun getReportChartSectionExpanded(context: Context): Boolean {
+        return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .getBoolean(KEY_REPORT_CHART_SECTION_EXPANDED, true)
+    }
+
+    fun setReportChartSectionExpanded(context: Context, expanded: Boolean) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .putBoolean(KEY_REPORT_CHART_SECTION_EXPANDED, expanded)
             .apply()
     }
 
